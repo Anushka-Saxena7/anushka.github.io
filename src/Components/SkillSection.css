@@ -1,0 +1,28 @@
+.skills-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: transparent;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.skill-card {
+  background: #1e293b; /* slate-800 like */
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: default;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 255, 255, 0.2);
+}

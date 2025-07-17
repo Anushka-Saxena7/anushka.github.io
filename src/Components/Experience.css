@@ -1,0 +1,81 @@
+.experience-section {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 2rem;
+  background: #0f172a;
+}
+
+.experience-card {
+  background: rgba(30, 41, 59, 0.8); /* slate-800 with opacity */
+  color: #f8fafc;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  max-width: 800px;
+  width: 100%;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(20, 184, 166, 0.4);
+}
+
+.experience-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.experience-icon {
+  font-size: 2.5rem;
+  color: #14b8a6;
+}
+
+.experience-meta {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.experience-description {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #e2e8f0;
+}
+
+.experience-list {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.experience-list li {
+  margin-bottom: 0.5rem;
+  list-style: none;
+  color: #f1f5f9;
+}
+
+.tech-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.tech-badges span {
+  background: rgba(20, 184, 166, 0.2);
+  color: #14b8a6;
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.tech-badges span:hover {
+  background: #14b8a6;
+  color: #0f172a;
+}

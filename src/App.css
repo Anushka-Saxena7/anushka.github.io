@@ -1,0 +1,264 @@
+body {
+  background: #0f172a;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  position: relative;
+  min-height: 100vh;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  background: rgba(229, 231, 234, 0.7);
+  backdrop-filter: blur(10px);
+  z-index: 50;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fafdfc;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #14b8a6;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.hero-container {
+  max-width: 800px;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: #cbd5e1;
+  margin-top: 0.5rem;
+}
+
+.hero-icons {
+  margin-top: 1.5rem;
+}
+
+.hero-icons a {
+  margin: 0 0.5rem;
+  color: #38bdf8;
+  transition: color 0.3s;
+}
+
+.hero-icons a:hover {
+  color: #ffffff;
+}
+
+/* Resume button */
+.resume-button {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 2rem;
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.resume-button:hover {
+  background: #ffffff;
+  color: #0f172a;
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-left {
+    padding-right: 0;
+  }
+
+  .hero-right {
+    margin-top: 2rem;
+  }
+}
+
+
+section {
+  padding: 100px 20px;
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+}
+
+section h3 {
+  color: #14b8a6;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+section li{
+  text-decoration: none;
+  list-style: none;
+}
+#about p{
+  font-family: cursive;
+}
+.projects-section {
+  padding: 4rem 2rem;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #38bdf8;
+  margin-bottom: 2rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background: rgba(30, 41, 59, 0.7); /* your portfolio theme */
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(56, 189, 248, 0.3);
+}
+
+.project-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.project-card h4 {
+  font-size: 1.4rem;
+  color: #f8fafc;
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  color: #cbd5e1;
+  margin-bottom: 1rem;
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-links a,
+.project-links button {
+  background: transparent;
+  color: #38bdf8;
+  border: 1px solid #38bdf8;
+  padding: 0.4rem 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.project-links a:hover,
+.project-links button:hover {
+  background: #38bdf8;
+  color: #0f172a;
+}
+.about-journey {
+  padding: 4rem 2rem;
+}
+
+.journey-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.journey-box {
+  background: rgba(30, 41, 59, 0.7); /* same dark theme */
+  border-radius: 1rem;
+  padding: 2rem;
+  flex: 1 1 300px;
+  max-width: 500px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.journey-box h4 {
+  color: #38bdf8;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.journey-box p {
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+.journey-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(56, 189, 248, 0.3);
+}
+#contact a{
+  color: white;
+}
+footer {
+  background: #1f2937;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
