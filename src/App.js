@@ -9,7 +9,7 @@ import SkillSection from "./Components/SkillSection";
 import Experience from "./Components/Experience";
 import rent from './car-rent.avif'
 import supplier from './supplier.jpg'
-import legal from './a10.jpg'
+import legalIm from './a10.jpg'
 import { HiDocumentArrowDown } from "react-icons/hi2";
 
 const App = () => {
@@ -173,7 +173,7 @@ Driven by curiosity and a commitment to continuous learning, I aim to use techno
         </div> */}
       </div>
       <div className="project-card">
-        <img src={legal} alt="Legal Document Review" className="project-image" />
+        <img src={legalIm} alt="Legal Document Review" className="project-image" />
         <h4>Legal Document Review</h4>
         <p>Automated NLP tool to analyze legal documents using React, Node, Python.</p>
         {/* <div className="project-links">
