@@ -9,7 +9,7 @@ import SkillSection from "./Components/SkillSection";
 import Experience from "./Components/Experience";
 import rent from './car-rent.avif'
 import supplier from './supplier.jpg'
-import legal from './legal1.jpeg'
+import legal from './a10.jpg'
 import { HiDocumentArrowDown } from "react-icons/hi2";
 
 const App = () => {
@@ -88,15 +88,13 @@ const App = () => {
         </a>
       </div>
 
-      <a href="/Anushka_Resume.pdf" target="_blank" className="resume-button">
+      <a href={`${process.env.PUBLIC_URL}/Anushka_Resume.pdf`} target="_blank" className="resume-button" rel="noopener noreferrer">
         <HiDocumentArrowDown size={22} style={{ marginRight: "8px" }} />
         Resume
       </a>
     </motion.div>
   </div>
 </section>
-
-
 
         <section id="about">
           <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }}>
@@ -195,18 +193,6 @@ Driven by curiosity and a commitment to continuous learning, I aim to use techno
             <p>Java, JavaScript, Python, SQL, ReactJS, Node.js, Express.js, Bootstrap, DSA, UI/UX, API Integration, Android</p> */}
           </motion.div>
         </section>
-
-        {/* <section id="achievements">
-          <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }}>
-            <h3>Achievements</h3>
-            <ul>
-              <li>Cisco Networking Essentials</li>
-              <li>Java Training</li>
-              <li>Hackathons</li>
-              <li>Azure AI Training (ICT Academy)</li>
-            </ul>
-          </motion.div>
-        </section> */}
 
         <section id="contact">
           <motion.div initial={{ scale: 0.8, opacity: 0 }} whileInView={{ scale: 1, opacity: 1 }} transition={{ duration: 1 }}>
